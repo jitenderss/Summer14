@@ -4,3 +4,8 @@ commands-
 	git add *
 	git commit -m "anything you want to write here"
 	git push -u origin master
+
+
+if it gives error then push forcly
+	git push -f
+
