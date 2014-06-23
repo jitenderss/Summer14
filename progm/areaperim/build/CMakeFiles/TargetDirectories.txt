@@ -1,0 +1,1 @@
+/home/jitender/progm/areaperim/build/CMakeFiles/DisplayImage.dir

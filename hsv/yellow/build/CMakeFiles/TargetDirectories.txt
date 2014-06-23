@@ -1,0 +1,1 @@
+/home/jitender/hsv/yellow/build/CMakeFiles/DisplayImage.dir

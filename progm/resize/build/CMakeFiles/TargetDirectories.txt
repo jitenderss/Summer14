@@ -1,0 +1,1 @@
+/home/jitender/progm/resize/build/CMakeFiles/DisplayImage.dir

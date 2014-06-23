@@ -1,0 +1,8 @@
+in terminal go to the desired folder for eg
+cd
+cd progm
+cd dup
+cd build
+cmake ..
+make
+./DisplayImage ../name.jpg

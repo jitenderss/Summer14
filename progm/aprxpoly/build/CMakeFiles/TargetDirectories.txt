@@ -1,0 +1,1 @@
+/home/jitender/progm/aprxpoly/build/CMakeFiles/DisplayImage.dir

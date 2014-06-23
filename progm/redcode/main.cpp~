@@ -1,0 +1,45 @@
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <iostream>
+
+using namespace cv;
+using namespace std;
+
+int main(int argc, char** argv)
+{
+ VideoCapture cap(-1);     // get 'any' cam
+    while( cap.isOpened() )   // check if we succeeded
+    {
+        Mat image;
+        if ( ! cap.read(image) )
+            break;
+
+   
+
+    
+     
+  for(int j=0;j<image.rows;j++) 
+{
+  for (int i=0;i<image.cols;i++)
+  {
+	if( image.at<Vec3b>(j,i)[2] < 150 || image.at<Vec3b>(j,i)[1]>50 || image.at<Vec3b>(j,i)[0]>50) 
+			{image.at<Vec3b>(j,i)[2] = 0;} 
+     image.at<Vec3b>(j,i)[0] = 0;  //turn the pixel value @ (k,i) to yellow (0,255,255)
+			image.at<Vec3b>(j,i)[1] = 0;
+			
+			
+       /*image.at<uchar>(j,i) = 255; //white*/
+  }
+}
+	int k = waitKey(33);
+        	if ( k==27 )
+            	break;
+	namedWindow("Display window", CV_WINDOW_AUTOSIZE);
+	imshow("Display Window",image);
+    
+    
+ }
+    return 0;
+}
+
+

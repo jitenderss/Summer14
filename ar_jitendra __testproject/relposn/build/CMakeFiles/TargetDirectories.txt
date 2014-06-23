@@ -1,0 +1,2 @@
+/home/jitender/ar_jitendra __testproject/relposn/build/CMakeFiles/aruco_simple.dir
+/home/jitender/ar_jitendra __testproject/relposn/build/CMakeFiles/aruco_simple_video.dir
