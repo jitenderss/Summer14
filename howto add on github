@@ -1,0 +1,6 @@
+on terminal, let say temp_git_rep is folder you want to upload on github 
+commands-
+	cd temp_git_rep
+	git add *
+	git commit -m "anything you want to write here"
+	git push -u origin master
