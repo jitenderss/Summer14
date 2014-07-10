@@ -20,18 +20,40 @@ using namespace cv;
 using namespace aruco;
 
 int main(int argc,char **argv)
-{
+{ int count=0;
     try
     {
-        if (argc!=2) {
-            cerr<<"Usage: in.jpg "<<endl;
-            return -1;
-        }
         MarkerDetector MDetector;
         vector<Marker> Markers;
-        //read the input image
-        cv::Mat InImage;
-        InImage=cv::imread(argv[1]);
+       VideoCapture cap(1); // open the video camera no. 0
+
+	    if (!cap.isOpened())  // if not success, exit program
+	    {
+	cout << "Cannot open the video cam" << endl;
+	        return -1;
+	    }
+
+	   double dWidth = cap.get(CV_CAP_PROP_FRAME_WIDTH); //get the width of frames of the video
+	   double dHeight = cap.get(CV_CAP_PROP_FRAME_HEIGHT); //get the height of frames of the video
+
+	    cout << "Frame size : " << dWidth << " x " << dHeight << endl;
+
+	    
+
+	    while (count==0)
+	    {
+	        Mat InImage;
+
+	        bool bSuccess = cap.read(InImage); // read a new frame from video
+
+	if (!bSuccess) //if not success, break loop
+	{
+	cout << "Cannot read a frame from video stream" << endl;
+	break;
+	}
+        count=1;
+	
+	cv::imshow("InImage",InImage);
     //Ok, let's detect
         MDetector.detect(InImage,Markers);
         //for each marker, draw info and its boundaries in the image
@@ -40,6 +62,8 @@ int main(int argc,char **argv)
 		//cout<<Markers[0][0].x<<endl;
             Markers[i].draw(InImage,Scalar(0,0,255),2);
         }
+	imwrite( "../InImage.jpg",InImage) ;
+	 cv::imshow("in",InImage);
 	Point2f center[Markers.size()];
 	for(int i=0;i<Markers.size();i++)        //calculating the center points of each detected markers
 	{
@@ -56,8 +80,8 @@ int main(int argc,char **argv)
 		up[i].y=(Markers[i][0].y+Markers[i][1].y)/2;
 		//cout<< up[i].x<<","<<up[i].y<<endl;
 	}
-	int ref;
-	cin>>ref;
+	int ref=0;
+	//cin>>ref;
 	cout<<"center of ref "<<center[ref].x<<","<<center[ref].y<<endl;
 	cout<<"up of ref "<<up[ref].x<<","<<up[ref].y<<endl;
 	double r=(center[ref].y-up[ref].y);
@@ -162,7 +186,7 @@ int main(int argc,char **argv)
 				
 			}
 		}*/
-		cout<<"relative center of  "<< m <<"is"<<cntr[m].x<<","<<cntr[m].y<<endl;		
+		cout<<"relative center of  "<< m <<"is"<<cntr[m].x<<","<<cntr[m].y<<"& in realtime"<<0.315*cntr[m].x<<","<<0.315*cntr[m].y<<endl;		
 	}
 	Point2f top[Markers.size()];  // similarly convert each top points of marker into another frame 
 	for(int m=0;m<Markers.size();m++)
@@ -218,13 +242,18 @@ int main(int argc,char **argv)
 	}
 		
 	
-        cv::imshow("in",InImage);
-        cv::waitKey(0);//wait for key to be pressed
+       
+        if (waitKey(30) == 27) //wait for 'esc' key press for 30ms. If 'esc' key is pressed, break loop
+	{
+	cout << "esc key is pressed by user" << endl;
+	break;
+	}
+}
     } catch (std::exception &ex)
     {
         cout<<"Exception :"<<ex.what()<<endl;
     }
-
+	
     return 0;
 }
  

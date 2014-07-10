@@ -51,37 +51,37 @@ main(int argc, char *argv[])
 {	if(x2>x1&&y2>y1)
 	{	
 		newangle=1800+10*angle;
-		pp2.SetSpeed(0.0,0.0,dtor(newangle-prevangle));
+		pp2.SetSpeed(0.5,0.0,dtor(newangle-prevangle));
 		prevangle=newangle;
 	}
 	if(x2>x1 && y2<y1)
 	{
 		newangle=1800-10*angle;
-		pp2.SetSpeed(0.0,0.0,dtor(newangle-prevangle));
+		pp2.SetSpeed(0.5,0.0,dtor(newangle-prevangle));
 		prevangle=newangle;
 	}
 	if(x2<x1 && y2>y1)
 	{
 		newangle=-1*10*angle;
-		pp2.SetSpeed(0.0,0.0,dtor(newangle-prevangle));
+		pp2.SetSpeed(0.5,0.0,dtor(newangle-prevangle));
 		prevangle=newangle;
 	}
 	if(x2<x1 && y2<y1)
 	{
 		newangle=10*angle;
-		pp2.SetSpeed(0.0,0.0,dtor(newangle-prevangle));
+		pp2.SetSpeed(0.5,0.0,dtor(newangle-prevangle));
 		prevangle=newangle;
 	}
 	count=1;
 }	
 		
    
-   else
+   /*else
 	{	 pp2.SetSpeed(3.0,0);
 		count=0;
-	}
+	}*/
 	
-    pp.SetSpeed(1,dtor(45));
+    pp.SetSpeed(0.2,dtor(45));
     //double r= sqrt((x2-x1)^2 + (y2-y1)^2);
     
     

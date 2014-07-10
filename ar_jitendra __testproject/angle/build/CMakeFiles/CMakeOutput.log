@@ -1,4 +1,4 @@
-The system is: Linux - 3.11.0-22-generic - i686
+The system is: Linux - 3.11.0-24-generic - i686
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/gcc 
 Build flags: 

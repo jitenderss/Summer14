@@ -1,0 +1,184 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jitender/ar_jitendra __testproject/cubebox/aruco.h
+markerdetector.h
+/home/jitender/ar_jitendra __testproject/cubebox/markerdetector.h
+boarddetector.h
+/home/jitender/ar_jitendra __testproject/cubebox/boarddetector.h
+cvdrawingutils.h
+/home/jitender/ar_jitendra __testproject/cubebox/cvdrawingutils.h
+
+/home/jitender/ar_jitendra __testproject/cubebox/aruco_simple.cpp
+iostream
+-
+aruco.h
+/home/jitender/ar_jitendra __testproject/cubebox/aruco.h
+cvdrawingutils.h
+/home/jitender/ar_jitendra __testproject/cubebox/cvdrawingutils.h
+opencv2/highgui/highgui.hpp
+-
+
+/home/jitender/ar_jitendra __testproject/cubebox/board.h
+opencv2/core/core.hpp
+-
+string
+-
+vector
+-
+exports.h
+/home/jitender/ar_jitendra __testproject/cubebox/exports.h
+marker.h
+/home/jitender/ar_jitendra __testproject/cubebox/marker.h
+
+/home/jitender/ar_jitendra __testproject/cubebox/boarddetector.h
+opencv2/core/core.hpp
+-
+exports.h
+/home/jitender/ar_jitendra __testproject/cubebox/exports.h
+board.h
+/home/jitender/ar_jitendra __testproject/cubebox/board.h
+cameraparameters.h
+/home/jitender/ar_jitendra __testproject/cubebox/cameraparameters.h
+markerdetector.h
+/home/jitender/ar_jitendra __testproject/cubebox/markerdetector.h
+
+/home/jitender/ar_jitendra __testproject/cubebox/cameraparameters.h
+exports.h
+/home/jitender/ar_jitendra __testproject/cubebox/exports.h
+opencv2/core/core.hpp
+-
+string
+-
+
+/home/jitender/ar_jitendra __testproject/cubebox/cvdrawingutils.h
+exports.h
+/home/jitender/ar_jitendra __testproject/cubebox/exports.h
+aruco.h
+/home/jitender/ar_jitendra __testproject/cubebox/aruco.h
+
+/home/jitender/ar_jitendra __testproject/cubebox/exports.h
+
+/home/jitender/ar_jitendra __testproject/cubebox/marker.h
+vector
+-
+iostream
+-
+opencv2/core/core.hpp
+-
+exports.h
+/home/jitender/ar_jitendra __testproject/cubebox/exports.h
+cameraparameters.h
+/home/jitender/ar_jitendra __testproject/cubebox/cameraparameters.h
+
+/home/jitender/ar_jitendra __testproject/cubebox/markerdetector.h
+opencv2/core/core.hpp
+-
+cstdio
+-
+iostream
+-
+cameraparameters.h
+/home/jitender/ar_jitendra __testproject/cubebox/cameraparameters.h
+exports.h
+/home/jitender/ar_jitendra __testproject/cubebox/exports.h
+marker.h
+/home/jitender/ar_jitendra __testproject/cubebox/marker.h
+
+/usr/local/include/opencv2/core/core.hpp
+opencv2/core/types_c.h
+/usr/local/include/opencv2/core/opencv2/core/types_c.h
+opencv2/core/version.hpp
+/usr/local/include/opencv2/core/opencv2/core/version.hpp
+limits.h
+-
+algorithm
+-
+cmath
+-
+cstddef
+-
+complex
+-
+map
+-
+new
+-
+string
+-
+vector
+-
+sstream
+-
+opencv2/core/operations.hpp
+/usr/local/include/opencv2/core/opencv2/core/operations.hpp
+opencv2/core/mat.hpp
+/usr/local/include/opencv2/core/opencv2/core/mat.hpp
+
+/usr/local/include/opencv2/core/core_c.h
+opencv2/core/types_c.h
+/usr/local/include/opencv2/core/opencv2/core/types_c.h
+
+/usr/local/include/opencv2/core/mat.hpp
+limits.h
+-
+string.h
+-
+
+/usr/local/include/opencv2/core/operations.hpp
+string.h
+-
+limits.h
+-
+ext/atomicity.h
+-
+bits/atomicity.h
+-
+limits
+-
+
+/usr/local/include/opencv2/core/types_c.h
+assert.h
+-
+stdlib.h
+-
+string.h
+-
+float.h
+-
+stdint.h
+-
+intrin.h
+-
+emmintrin.h
+-
+fastmath.h
+-
+math.h
+-
+ipl.h
+-
+ipl/ipl.h
+-
+tegra_round.hpp
+/usr/local/include/opencv2/core/tegra_round.hpp
+emmintrin.h
+/usr/local/include/opencv2/core/emmintrin.h
+
+/usr/local/include/opencv2/core/version.hpp
+
+/usr/local/include/opencv2/highgui/highgui.hpp
+opencv2/core/core.hpp
+/usr/local/include/opencv2/highgui/opencv2/core/core.hpp
+opencv2/highgui/highgui_c.h
+/usr/local/include/opencv2/highgui/opencv2/highgui/highgui_c.h
+
+/usr/local/include/opencv2/highgui/highgui_c.h
+opencv2/core/core_c.h
+/usr/local/include/opencv2/highgui/opencv2/core/core_c.h
+

@@ -24,7 +24,8 @@ int main(int argc,char **argv)
         //for each marker, draw info and its boundaries in the image
         for (unsigned int i=0;i<Markers.size();i++) {
             cout<<Markers[i]<<endl;
-		cout<<Markers[1][0].x<<endl;
+		cout<<Markers[0][0].x<<endl;
+		cout<<Markers[0].Tvec.at<float>(0,0)<<endl;  //x value of Tvec and Markers[0].Tvec then whole Tvec will be printed
             Markers[i].draw(InImage,Scalar(0,0,255),2);
         }
         cv::imshow("in",InImage);

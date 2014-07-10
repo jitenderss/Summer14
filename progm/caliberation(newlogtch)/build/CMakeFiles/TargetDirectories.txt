@@ -1,0 +1,1 @@
+/home/jitender/progm/caliberation(newlogtch)/build/CMakeFiles/video.dir

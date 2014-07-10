@@ -108,19 +108,6 @@ aruco_simple/fast:
 	$(MAKE) -f CMakeFiles/aruco_simple.dir/build.make CMakeFiles/aruco_simple.dir/build
 .PHONY : aruco_simple/fast
 
-#=============================================================================
-# Target rules for targets named aruco_simple_video
-
-# Build rule for target.
-aruco_simple_video: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 aruco_simple_video
-.PHONY : aruco_simple_video
-
-# fast build rule for target.
-aruco_simple_video/fast:
-	$(MAKE) -f CMakeFiles/aruco_simple_video.dir/build.make CMakeFiles/aruco_simple_video.dir/build
-.PHONY : aruco_simple_video/fast
-
 aruco_simple.o: aruco_simple.cpp.o
 .PHONY : aruco_simple.o
 
@@ -145,30 +132,6 @@ aruco_simple.cpp.s:
 	$(MAKE) -f CMakeFiles/aruco_simple.dir/build.make CMakeFiles/aruco_simple.dir/aruco_simple.cpp.s
 .PHONY : aruco_simple.cpp.s
 
-aruco_simple_video.o: aruco_simple_video.cpp.o
-.PHONY : aruco_simple_video.o
-
-# target to build an object file
-aruco_simple_video.cpp.o:
-	$(MAKE) -f CMakeFiles/aruco_simple_video.dir/build.make CMakeFiles/aruco_simple_video.dir/aruco_simple_video.cpp.o
-.PHONY : aruco_simple_video.cpp.o
-
-aruco_simple_video.i: aruco_simple_video.cpp.i
-.PHONY : aruco_simple_video.i
-
-# target to preprocess a source file
-aruco_simple_video.cpp.i:
-	$(MAKE) -f CMakeFiles/aruco_simple_video.dir/build.make CMakeFiles/aruco_simple_video.dir/aruco_simple_video.cpp.i
-.PHONY : aruco_simple_video.cpp.i
-
-aruco_simple_video.s: aruco_simple_video.cpp.s
-.PHONY : aruco_simple_video.s
-
-# target to generate assembly for a file
-aruco_simple_video.cpp.s:
-	$(MAKE) -f CMakeFiles/aruco_simple_video.dir/build.make CMakeFiles/aruco_simple_video.dir/aruco_simple_video.cpp.s
-.PHONY : aruco_simple_video.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -176,15 +139,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... aruco_simple"
-	@echo "... aruco_simple_video"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... aruco_simple.o"
 	@echo "... aruco_simple.i"
 	@echo "... aruco_simple.s"
-	@echo "... aruco_simple_video.o"
-	@echo "... aruco_simple_video.i"
-	@echo "... aruco_simple_video.s"
 .PHONY : help
 
 

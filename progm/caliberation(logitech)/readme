@@ -1,0 +1,5 @@
+go to build & type
+- ./video 1 -w 4 -h 6 -s 0.03 -o camera.yml -op -oe
+	
+	1-camera index
+	

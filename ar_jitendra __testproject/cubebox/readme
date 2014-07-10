@@ -1,0 +1,12 @@
+in terminal type-
+
+./aruco_simple ../2014-07-01-175945.jpg ../camera.yml 0.136
+
+
+	0.136 is size of marker
+	camera.yml is intrinsic file of camera (get from caliberation)
+	instead of image,u can give video as input-  ../2014-07-01-182138.avi
+
+
+./aruco_simple_video ../camera.yml 0.136
+	this is for live stream 

@@ -1,0 +1,10 @@
+terminal-
+	cd ar_jitendra __testproject
+	cd basic
+	cd build
+	./aruco_simple_video 
+
+
+for image
+	change last line to
+	./aruco_simple ../image.jpeg
